@@ -36,12 +36,12 @@ public class SimpleMath {
 		        // With auto-boxing / unboxing
 		        result = (T) (Integer) ((Integer) number1 + (Integer) number2);
 		    }
-		 if (number1.getClass() == Double.class) {
+		 else if (number1.getClass() == Double.class) {
 		        // Without auto-boxing / unboxing
 		        result = (T) Double.valueOf(((Double) number1).doubleValue() + 
 		                                ((Double) number2).doubleValue());
 		    }
-		 if (number1.getClass() == Long.class) {
+		 else if (number1.getClass() == Long.class) {
 		        // Without auto-boxing / unboxing
 		        result = (T) Long.valueOf(((Long) number1).longValue() + 
 		                                ((Long) number2).longValue());
