@@ -39,5 +39,9 @@ public class SimpleMathTest extends TestCase {
         assertEquals(-1, simpleMath.sinX_hadiAwad(270));
         assertEquals(0, simpleMath.sinX_hadiAwad(360));
     }
-
+	@Test
+    public void testDiv_layalizidan() {
+        assertEquals( 2.0, simpleMath.division_layalizidan(10.0, 5));
+        assertEquals( 2, simpleMath.division_layalizidan(10, 5));
+    }
 }
