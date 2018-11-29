@@ -14,7 +14,6 @@ import javafx.scene.control.SplitPane.Divider;
 public class SimpleMath {
 	// CONSTANTS
 	// ------------------------------------------
-
 	// METHODS
 	// ------------------------------------------
 
