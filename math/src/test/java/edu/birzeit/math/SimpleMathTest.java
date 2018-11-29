@@ -11,8 +11,7 @@ public class SimpleMathTest extends TestCase {
 
 	static SimpleMath simpleMath;
 
-	@BeforeClass
-	public static void initCalculator() {
+	public SimpleMathTest() {
 		simpleMath = new SimpleMath();
 	}
 
@@ -27,7 +26,7 @@ public class SimpleMathTest extends TestCase {
 	public void testSumIntegerDouble() {
 		@SuppressWarnings("static-access")
 		Double result = simpleMath.add(10.5, 10.5);
-		assertEquals(21, result);
+		assertEquals(21.0, result);
 
 	}
 	
@@ -42,6 +41,12 @@ public class SimpleMathTest extends TestCase {
 	@Test
     public void testDiv_layalizidan() {
         assertEquals( 2.0, simpleMath.division_layalizidan(10.0, 5));
-        assertEquals( 2, simpleMath.division_layalizidan(10, 5));
+        assertEquals( 2.0, simpleMath.division_layalizidan(10, 5));
+    }
+	
+	@Test
+    public void testSquareRoot_BaraaAyyash() {
+        assertEquals(3.0, simpleMath.squareRoot_BaraaAyyash(9));
+        assertEquals( 2.0, simpleMath.squareRoot_BaraaAyyash(4));
     }
 }

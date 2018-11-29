@@ -30,21 +30,20 @@ public class SimpleMath {
 	// TO DO
 	// This method needs refactoring -
 
-	public static <T> T add(T number1, T number2) {
-
-		T result = null;
+	public static <T> T add(Number number1, Number number2) {
 
 		if (number1.getClass() == Integer.class) {
 			// With auto-boxing / unboxing
-			result = (T) (Integer) ((Integer) number1 + (Integer) number2);
+			return (T) (Integer) (number1.intValue() + number2.intValue());
 		} else if (number1.getClass() == Double.class) {
 			// Without auto-boxing / unboxing
-			result = (T) Double.valueOf(((Double) number1).doubleValue() + ((Double) number2).doubleValue());
+			return (T) (Double) (number1.doubleValue() + number2.doubleValue());
 		} else if (number1.getClass() == Long.class) {
 			// Without auto-boxing / unboxing
-			result = (T) Long.valueOf(((Long) number1).longValue() + ((Long) number2).longValue());
+			return (T) (Long)(number1.longValue() +  number2.longValue());
 		}
-		return result;
+		
+		return null;
 	}
 
 	public int sinX_hadiAwad(double number) {
@@ -62,6 +61,8 @@ public class SimpleMath {
 		return result;
 	}
 	
-
-
+	public static double squareRoot_BaraaAyyash(Number number) {
+		return Math.sqrt(number.doubleValue());
+	}
+	
 }
