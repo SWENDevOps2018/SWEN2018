@@ -12,7 +12,6 @@ import javafx.scene.control.SplitPane.Divider;
  */
 
 public class SimpleMath {
-
 	// CONSTANTS
 	// ------------------------------------------
 
@@ -44,6 +43,14 @@ public class SimpleMath {
 		}
 		
 		return null;
+	}
+	public static double factorial_lena(double number)
+	{
+
+		if (number <= 1)
+			return 1;
+
+		return number * factorial_lena(number - 1);
 	}
 
 	public int sinX_hadiAwad(double number) {
