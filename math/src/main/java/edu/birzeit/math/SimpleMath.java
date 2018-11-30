@@ -87,4 +87,10 @@ public class SimpleMath {
 		return result;
 
 	}
+	
+	public static Double power_HadeelEhmouda(Double base, Double number) {
+
+		return Math.pow(number, base);
+
+	}
 }

@@ -70,4 +70,11 @@ public class SimpleMathTest extends TestCase {
 		assertEquals(10.0, result);
 
 	}
+	
+	@Test
+	public void testPower() {
+ 
+		assertEquals(4.0, simpleMath.power_HadeelEhmouda(2.0, 2.0));
+
+	}
 }
