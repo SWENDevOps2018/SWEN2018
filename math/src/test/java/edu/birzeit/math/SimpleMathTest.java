@@ -56,4 +56,18 @@ public class SimpleMathTest extends TestCase {
         assertEquals(3.0, simpleMath.squareRoot_BaraaAyyash(9));
         assertEquals( 2.0, simpleMath.squareRoot_BaraaAyyash(4));
     }
+	@Test
+	public void testSubtractInteger() {
+		
+		int result = simpleMath.subtract_Samaher(30, 10);
+		assertEquals(20, result);
+	}
+
+	@Test
+	public void testSubtractDouble() {
+
+		Double result = simpleMath.subtract_Samaher(10.5, 0.5);
+		assertEquals(10.0, result);
+
+	}
 }

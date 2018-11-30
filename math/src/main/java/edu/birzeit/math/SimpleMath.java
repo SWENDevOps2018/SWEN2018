@@ -70,5 +70,21 @@ public class SimpleMath {
 	public static double squareRoot_BaraaAyyash(Number number) {
 		return Math.sqrt(number.doubleValue());
 	}
-	
+	public static <T> T subtract_Samaher(T number1, T number2) {
+
+		T result = null;
+
+		if (number1.getClass() == Integer.class) {
+			result = (T) (Integer) ((Integer) number1 - (Integer) number2);
+		}
+		else if (number1.getClass() == Double.class) {
+			result = (T) Double.valueOf(((Double) number1).doubleValue() - ((Double) number2).doubleValue());
+		}
+		else if (number1.getClass() == Long.class) {
+			result = (T) Long.valueOf(((Long) number1).longValue() - ((Long) number2).longValue());
+		}
+
+		return result;
+
+	}
 }
