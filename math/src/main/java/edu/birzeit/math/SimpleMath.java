@@ -67,6 +67,10 @@ public class SimpleMath {
 		return result;
 	}
 	
+	public double pow_ahdRadwan(double number, double power) {
+		return (double) Math.pow(number, power);
+	}
+
 	public static double squareRoot_BaraaAyyash(Number number) {
 		return Math.sqrt(number.doubleValue());
 	}

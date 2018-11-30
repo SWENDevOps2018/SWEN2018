@@ -52,6 +52,14 @@ public class SimpleMathTest extends TestCase {
     }
 	
 	@Test
+    public void testPow_AhdRadwan() {
+        assertEquals(4.0, simpleMath.pow_ahdRadwan(2.0, 2));
+        assertEquals(1.0, simpleMath.pow_ahdRadwan(1, 1));
+        assertEquals(0.0, simpleMath.pow_ahdRadwan(0, 2.0));
+        assertEquals(16.0, simpleMath.pow_ahdRadwan(2.0, 4.0));
+    }
+
+	@Test
     public void testSquareRoot_BaraaAyyash() {
         assertEquals(3.0, simpleMath.squareRoot_BaraaAyyash(9));
         assertEquals( 2.0, simpleMath.squareRoot_BaraaAyyash(4));
