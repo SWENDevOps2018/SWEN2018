@@ -27,7 +27,7 @@ public class SimpleMath {
 	 */
 	// TO DO 
 				// This method needs refactoring  -
-	
+/*	
 	public static <T> T add (T number1, T number2) {
 		
 		 T result = null;
@@ -52,4 +52,32 @@ public class SimpleMath {
 		
 	}
 	
+*/
+	public static <T> T add (T number1, T number2) {
+		
+		 T result = null;
+		 
+		 String type = number1.getClass().getName().toString();
+		 
+		 switch(type)
+		 {
+		 case "java.lang.Integer":
+			 result = (T) (Integer) ((Integer) number1 + (Integer) number2);
+		 
+		 case "java.lang.Double":
+			 result = (T) Double.valueOf(((Double) number1).doubleValue() + 
+                     ((Double) number2).doubleValue());
+			 
+		 case "java.lang.Long":
+			 result = (T) Long.valueOf(((Long) number1).longValue() + 
+                     ((Long) number2).longValue());
+		 }
+		 
+		
+		
+		
+		return result;
+		
+	}
+		
 }
