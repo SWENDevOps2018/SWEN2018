@@ -41,7 +41,7 @@ public class SimpleMathTest extends TestCase {
 
 	@Test
 	public void testFactorial_lena() {
-		assertEquals( 6, simpleMath.factorial_lena(3));
+		assertEquals( 6.0, simpleMath.factorial_lena(3));
 		assertEquals( 120.0, simpleMath.factorial_lena(5));
 	}
 
