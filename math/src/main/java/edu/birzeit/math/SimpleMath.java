@@ -28,7 +28,7 @@ public class SimpleMath {
 	// TO DO
 	// This method needs refactoring -
 
-	public static <T> T add(Number number1, Number number2) {
+	public static <T> T add(final Number number1, final Number number2) {
 
 		if (number1.getClass() == Integer.class) {
 			// With auto-boxing / unboxing
@@ -43,7 +43,7 @@ public class SimpleMath {
 		
 		return null;
 	}
-	public static double factorial_lena(double number)
+	public static double factorial_lena(final double number)
 	{
 
 		if (number <= 1)
@@ -52,12 +52,12 @@ public class SimpleMath {
 		return number * factorial_lena(number - 1);
 	}
 
-	public int sinX_hadiAwad(double number) {
+	public int sinX_hadiAwad(final double number) {
 		double radians = Math.toRadians(number);
 		return (int) Math.sin(radians);
 	}
 	
-	public static double division_layalizidan(double firstNumber, double secondNumber){
+	public static double division_layalizidan(final double firstNumber, final double secondNumber){
 		double result = 0;
 		if(secondNumber == 0){
 			throw new ArithmeticException("Division by zero!");
@@ -67,14 +67,14 @@ public class SimpleMath {
 		return result;
 	}
 	
-	public double pow_ahdRadwan(double number, double power) {
+	public double pow_ahdRadwan(final double number, final double power) {
 		return (double) Math.pow(number, power);
 	}
 
-	public static double squareRoot_BaraaAyyash(Number number) {
+	public static double squareRoot_BaraaAyyash(final Number number) {
 		return Math.sqrt(number.doubleValue());
 	}
-	public static <T> T subtract_Samaher(T number1, T number2) {
+	public static <T> T subtract_Samaher(final T number1, final T number2) {
 
 		T result = null;
 
@@ -92,7 +92,7 @@ public class SimpleMath {
 
 	}
 	
-	public static Double power_HadeelEhmouda(Double base, Double number) {
+	public static Double power_HadeelEhmouda(final Double base, final Double number) {
 
 		return Math.pow(number, base);
 
