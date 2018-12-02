@@ -97,4 +97,13 @@ public class SimpleMath {
 		return Math.pow(number, base);
 
 	}
+	
+	public static double factorial_TimothyGhanim(double number) {
+		double result = 1;
+		while(number > 1) {
+			result *= number;
+			number--;
+		}
+		return result;
+	}
 }

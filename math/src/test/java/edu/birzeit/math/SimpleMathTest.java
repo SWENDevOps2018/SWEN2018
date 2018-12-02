@@ -85,4 +85,9 @@ public class SimpleMathTest extends TestCase {
 		assertEquals(4.0, simpleMath.power_HadeelEhmouda(2.0, 2.0));
 
 	}
+	
+	@Test
+	public void testFactorial() {
+		assertEquals(6.0, simpleMath.factorial_TimothyGhanim(3.0));
+	}
 }
