@@ -45,7 +45,7 @@ public class SimpleMath {
 	}
 	
 	// Calculate average of two number
-	public static double average_Qais (final double firstNumber, final double secondNumber)
+	public static double average_Qais (double firstNumber, double secondNumber)
     {
         return (firstNumber + secondNumber ) / 2;
     }
