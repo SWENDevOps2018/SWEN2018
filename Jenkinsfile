@@ -8,12 +8,12 @@ pipeline {
                 echo 'Building..'
                 sh 'mvn clean package'
             }
-            post {
+          /**  post {
                 success {
                 echo 'Now Archiving...'
                 archiveartifacts artifacts:'**/target/*.jar'
                 }
-        }
+        } */
         stage('Test') {
             steps {
                 echo 'Testing..'
