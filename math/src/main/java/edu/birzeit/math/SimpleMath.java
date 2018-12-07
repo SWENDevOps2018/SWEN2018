@@ -43,6 +43,15 @@ public class SimpleMath {
 		
 		return null;
 	}
+	
+	// Calculate average of two number
+	public static double average_Qais (final double firstNumber, final double secondNumber)
+    {
+        return (firstNumber + secondNumber ) / 2;
+    }
+	
+	
+	
 	public static double factorial_lena(final double number)
 	{
 
@@ -70,6 +79,9 @@ public class SimpleMath {
 	public double pow_ahdRadwan(final double number, final double power) {
 		return (double) Math.pow(number, power);
 	}
+	
+	
+	
 
 	public static double squareRoot_BaraaAyyash(final Number number) {
 		return Math.sqrt(number.doubleValue());
