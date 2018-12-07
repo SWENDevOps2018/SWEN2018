@@ -90,4 +90,10 @@ public class SimpleMathTest extends TestCase {
 	public void testFactorial() {
 		assertEquals(6.0, simpleMath.factorial_TimothyGhanim(3.0));
 	}
+
+	@Test
+	public void testSubMohammedAbuAisha_negative() {
+		Integer result = simpleMath.subInteger_mohammed_abuaisha(5, 10);
+		assertEquals(-5, result.intValue());
+	}
 }

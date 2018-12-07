@@ -106,4 +106,9 @@ public class SimpleMath {
 		}
 		return result;
 	}
+
+	public static Integer subInteger_mohammed_abuaisha(Integer number1, Integer number2) {
+		Integer result = number1 - number2;
+		return result;
+	}
 }
