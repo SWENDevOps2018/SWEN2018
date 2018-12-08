@@ -96,4 +96,10 @@ public class SimpleMathTest extends TestCase {
 		Integer result = simpleMath.subInteger_mohammed_abuaisha(5, 10);
 		assertEquals(-5, result.intValue());
 	}
+	
+	@Test
+	public void testmultiply() {
+		assertEquals(8, simpleMath.multiply_mohammed_anan(2, 4));
+		
+	}
 }

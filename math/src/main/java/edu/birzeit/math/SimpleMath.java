@@ -123,4 +123,10 @@ public class SimpleMath {
 		Integer result = number1 - number2;
 		return result;
 	}
+	
+	public static Integer multiply_mohammed_anan(Integer number1, Integer number2) {
+		Integer result = number1 * number2;
+		return result;
+	}
+	
 }
