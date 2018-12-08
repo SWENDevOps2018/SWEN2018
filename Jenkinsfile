@@ -6,7 +6,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                build 'math'
+                bat 'mvn ckean package'
+
             }
             post {
                 success {
