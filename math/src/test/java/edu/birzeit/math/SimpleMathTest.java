@@ -99,7 +99,7 @@ public class SimpleMathTest extends TestCase {
 	
 	@Test
 	public void testmultiply() {
-		assertEquals(8, simpleMath.multiply_mohammed_anan(2, 4));
+		assertEquals(8, (int) simpleMath.multiply_mohammed_anan(2, 4));
 		
-	}
+	} 
 }
