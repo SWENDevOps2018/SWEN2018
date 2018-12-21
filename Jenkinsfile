@@ -6,7 +6,7 @@ pipeline {
                            
             steps {
                 echo 'Building..'
-                withMaven(maven: 'localMaven'){
+                withMaven(maven: 'localMaven', jdk:'localJDK'){
                 echo "workspace directory is ${workspace}"
                     dir("math"){
                 bat 'mvn clean package'
