@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 withMaven(maven: 'localMaven'){
-                echo echo "workspace directory is ${workspace}"
+                echo "workspace directory is ${workspace}"
                 bat 'mvn clean package'
                 bat 'docker build . -t swenapp:${env.BUILD_ID}'
                 }
