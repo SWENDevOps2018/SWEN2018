@@ -11,7 +11,7 @@ pipeline {
                     echo "Jenkins Build ID is ${env.BUILD_ID}"
                     dir("math"){
                 bat 'mvn clean package'
-                bat 'docker build ../ -t swenapp:sewn2018'
+                        bat "docker build ../ -t swentomcat:${env.BUILD_ID}"
                     }
                 }
             }
