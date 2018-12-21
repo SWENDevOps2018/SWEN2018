@@ -4,10 +4,10 @@ pipeline {
 
     stages {
         stage('Build') {
-            withMaven(maven: 'localMaven')
-                
+                           
             steps {
                 echo 'Building..'
+                withMaven(maven: 'localMaven')
                 bat 'mvn clean package'
                 bat 'docker build . -t swenapp:${env.BUILD_ID}'
             }
