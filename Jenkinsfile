@@ -8,9 +8,10 @@ pipeline {
                 echo 'Building..'
                 withMaven(maven: 'localMaven', jdk:'localJDK'){
                 echo "workspace directory is ${workspace}"
+                    echo "Jenkins Build ID is ${env.BUILD_ID}"
                     dir("math"){
                 bat 'mvn clean package'
-                bat 'docker build . -t swenapp:${env.BUILD_ID}'
+                bat 'docker build ../ -t swenapp:sewn2018'
                     }
                 }
             }
