@@ -8,7 +8,7 @@ pipeline {
                 echo 'Building..'
                 withMaven(maven: 'localMaven'){
                 echo "workspace directory is ${workspace}"
-                bat 'mvn ${workspace}\math\pom.xml clean package'
+                bat 'mvn ${workspace}/math/pom.xml clean package'
                 bat 'docker build . -t swenapp:${env.BUILD_ID}'
                 }
             }
