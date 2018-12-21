@@ -3,9 +3,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') 
+        stage('Build') {
             withMaven(maven: 'localMaven')
-                {
+                
             steps {
                 echo 'Building..'
                 bat 'mvn clean package'
